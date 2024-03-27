@@ -37,22 +37,22 @@ class ReviewerListApi(generics.ListCreateAPIView):
 
 class ratingListApi(generics.ListCreateAPIView):
     queryset = rating.objects.all()
-    serializer_class = rating
+    serializer_class = ratingSerializer
     permission_classes = (permissions.IsAuthenticatedOrReadOnly,)
     
 class movie_genresListApi(generics.ListCreateAPIView):
     queryset = movie_genres.objects.all()
-    serializer_class = rating 
+    serializer_class = movie_genresSerializer 
     permission_classes = (permissions.IsAuthenticatedOrReadOnly,)
 
 class Movie_castListApi(generics.ListCreateAPIView):
     queryset = Movie_cast.objects.all()
-    serializer_class = rating
+    serializer_class = Movie_castSerializer
     permission_classes = (permissions.IsAuthenticatedOrReadOnly,)
 
 class Movie_directorListApi(generics.ListCreateAPIView):
     queryset = Movie_director.objects.all()
-    serializer_class = rating 
+    serializer_class = movie_genresSerializer 
     permission_classes = (permissions.IsAuthenticatedOrReadOnly,)
 
 
