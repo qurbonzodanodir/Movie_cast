@@ -9,7 +9,7 @@ urlpatterns = [
     path('create/rating',ratingListApi.as_view()),
     path('create/movie_genres',movie_genresListApi.as_view()),
     path('create/movie_director',Movie_directorListApi.as_view()),
-    path('create/movie-cast',Movie_castListApi.as_view()),
+    path('create/movie_cast',Movie_castListApi.as_view()),
     path('update/actor/<int:pk>',ActorUpdateApi.as_view()),
     path('update/movie/<int:pk>',MovieUpdateApi.as_view()),
     path('update/director/<int:pk>',DirectorUpdateApi.as_view()),
